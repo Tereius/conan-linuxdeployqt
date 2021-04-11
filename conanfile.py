@@ -12,7 +12,7 @@ class LinuxdeployqtConan(ConanFile):
     homepage = "https://github.com/probonopd/linuxdeployqt"
     license = "GPLv3"
     no_copy_source = True
-    settings = {"os": ["Linux"], "arch": ["x86", "x86_64"], "os_build": ["Linux"], "arch_build": ["x86", "x86_64"]}
+    settings = {"os": ["Linux"], "arch": ["x86", "x86_64"]}
 
     def source(self):
         tools.download("https://github.com/probonopd/linuxdeployqt/releases/download/6/linuxdeployqt-6-x86_64.AppImage", "linuxdeployqt.AppImage")
